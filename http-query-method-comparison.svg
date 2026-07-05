@@ -1,0 +1,64 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="900" height="460" fill="#FAF8F4"/>
+
+  <text x="450" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#1A1612">GET vs POST vs QUERY</text>
+  <text x="450" y="66" text-anchor="middle" font-size="13" fill="#7A6E64">Where the new HTTP method fits</text>
+
+  <!-- Column headers -->
+  <g font-size="18" font-weight="700">
+    <rect x="40"  y="95" width="250" height="46" rx="10" fill="#EDEAE4"/>
+    <text x="165" y="124" text-anchor="middle" fill="#1A1612">GET</text>
+
+    <rect x="325" y="95" width="250" height="46" rx="10" fill="#EDEAE4"/>
+    <text x="450" y="124" text-anchor="middle" fill="#1A1612">POST</text>
+
+    <rect x="610" y="95" width="250" height="46" rx="10" fill="#E60023"/>
+    <text x="735" y="124" text-anchor="middle" fill="#FFFFFF">QUERY</text>
+  </g>
+
+  <!-- Rows -->
+  <g font-size="14" fill="#3D3530">
+    <text x="40" y="180" font-weight="700">Can carry a body</text>
+    <text x="40" y="230" font-weight="700">Safe (read-only)</text>
+    <text x="40" y="280" font-weight="700">Idempotent (retry-safe)</text>
+    <text x="40" y="330" font-weight="700">Cacheable</text>
+    <text x="40" y="380" font-weight="700">Good for long/complex filters</text>
+  </g>
+
+  <!-- GET column marks -->
+  <g font-size="20" text-anchor="middle">
+    <text x="165" y="182" fill="#C0392B">✕</text>
+    <text x="165" y="232" fill="#22543D">✓</text>
+    <text x="165" y="282" fill="#22543D">✓</text>
+    <text x="165" y="332" fill="#22543D">✓</text>
+    <text x="165" y="382" fill="#C0392B">✕</text>
+  </g>
+
+  <!-- POST column marks -->
+  <g font-size="20" text-anchor="middle">
+    <text x="450" y="182" fill="#22543D">✓</text>
+    <text x="450" y="232" fill="#C0392B">✕</text>
+    <text x="450" y="282" fill="#C0392B">✕</text>
+    <text x="450" y="332" fill="#C0392B">✕</text>
+    <text x="450" y="382" fill="#22543D">✓</text>
+  </g>
+
+  <!-- QUERY column marks -->
+  <g font-size="20" text-anchor="middle">
+    <text x="735" y="182" fill="#22543D">✓</text>
+    <text x="735" y="232" fill="#22543D">✓</text>
+    <text x="735" y="282" fill="#22543D">✓</text>
+    <text x="735" y="332" fill="#22543D">✓</text>
+    <text x="735" y="382" fill="#22543D">✓</text>
+  </g>
+
+  <!-- divider lines -->
+  <g stroke="#DDD7CE" stroke-width="1">
+    <line x1="40" y1="200" x2="860" y2="200"/>
+    <line x1="40" y1="250" x2="860" y2="250"/>
+    <line x1="40" y1="300" x2="860" y2="300"/>
+    <line x1="40" y1="350" x2="860" y2="350"/>
+  </g>
+
+  <text x="450" y="430" text-anchor="middle" font-size="13" fill="#9C8E84">RFC 10008 · The HTTP QUERY Method · June 2026</text>
+</svg>
